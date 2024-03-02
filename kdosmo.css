@@ -1,0 +1,212 @@
+
+  /* Webkit (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Firefox */
+  body {
+    scrollbar-color: #f1f1f1 #f1f1f1;
+  }
+  
+  body::-moz-scrollbar-thumb {
+    background: #888;
+  }
+  
+  body::-moz-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+
+body {
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*glava in noga*/
+
+header {
+    position: sticky;
+    top: 0;
+    height: 130px;
+    width: 100vw;
+    background-color: #f8f8f8;
+    z-index: 10;
+}
+
+footer {
+    background-color: #4e4e4e;
+    font-family: "Arimo", sans-serif;
+    font-size: 14px;
+    color: #f8f8f8;
+    text-align: center;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f8f8f8 !important;
+    margin: 5px;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    background-image: url(/images/jagosiNew.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 80%;
+    width: 250px;
+    left: 25%;
+    top: 10%;
+ }
+
+/*meni*/
+
+.meni,
+.jezikDE,
+.jezikEN {
+    position: absolute;
+    font-family: "Arimo", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.meni {
+    left: 62%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    text-decoration: none !important;
+    color: #7bcd16 !important;
+    margin-left: 30px;
+}
+
+a:hover {
+    color: #eb9705 !important;
+}
+
+.jezikDE,
+.jezikEN {
+    top: 15%;
+    color: #4e4e4e !important;
+}
+
+.jezikDE {
+    left: 91%;
+}
+
+.jezikEN {
+    left: 94%;
+}
+
+.stroj {
+    background-image: url(/images/machine.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+    height: calc(100vh - 130px);
+    width: 100vw;
+ 
+    /*https://unsplash.com/photos/grey-industrial-equipment-mhUsz2ezlXQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash*/
+}
+
+.strojBg {
+    position: absolute;
+    background: rgb(255,255,255);
+    background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
+    height: 80px;
+    width: 730px;
+    top: 63%;
+    left: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, .2);
+}
+
+.strojBesedilo {
+    position: absolute;
+    font-family: "Manrope", sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 1.3;
+    word-spacing: 2px;
+    padding: 40px 50px 40px 50px;
+}
+
+.zeleniTrak {
+    margin-top: 20px;
+    background-color: #7bcd16;
+    height: 30px;
+    width: 100vw;
+    font-family: "Arimo", sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kdoSmo {
+    display: grid;
+    background-color: #f8f8f8;
+    height: calc(80vh - 30px);
+    width: 100vw;
+    grid-template-columns: 900px 600px;
+    grid-template-rows: 370px;
+    gap: 30px;
+    margin: 30px;
+    justify-content: space-evenly; 
+}
+
+.naslov {
+    height: 50px;
+    width: 300px;
+    font-family: "Arimo", sans-serif;
+    font-size: 30px;
+    color: #7bcd16;
+    text-align: left;
+    margin: 10px 0 10px 0;
+    font-weight: 400;
+    
+}
+
+.predstavitev,
+.zaposlitev,
+.osebna {
+    font-size: 20px;
+}
+
+.podatki {
+    font-size: 17px;
+}
+
+.predstavitev,
+.zaposlitev,
+.osebna,
+.podatki {
+    font-family: "Arimo", sans-serif;
+    color: #000000;
+    text-align: justify;
+    line-height: 1.5;
+    word-spacing:-2px;
+}
