@@ -1,0 +1,173 @@
+  /* Webkit (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Firefox */
+  body {
+    scrollbar-color: #f1f1f1 #f1f1f1;
+  }
+  
+  body::-moz-scrollbar-thumb {
+    background: #888;
+  }
+  
+  body::-moz-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+
+body {
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*glava in noga*/
+
+header {
+    position: sticky;
+    top: 0;
+    height: 130px;
+    width: 100vw;
+    background-color: #f8f8f8;
+    z-index: 10;
+}
+
+footer {
+    background-color: #4e4e4e;
+    font-family: "Arimo", sans-serif;
+    font-size: 14px;
+    color: #f8f8f8;
+    text-align: center;
+    height: 25px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f8f8f8 !important;
+    margin: 5px;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    background-image: url(../images/jagosiNew.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 80%;
+    width: 250px;
+    left: 25%;
+    top: 11%;
+ }
+
+/*meni*/
+
+.meni,
+.jezikDE,
+.jezikEN {
+    position: absolute;
+    font-family: "Arimo", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.meni {
+    left: 62%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    text-decoration: none !important;
+    color: #7bcd16 !important;
+    margin-left: 30px;
+}
+
+a:hover {
+    color: #eb9705 !important;
+}
+
+.jezikDE,
+.jezikEN {
+    top: 13%;
+    color: #4e4e4e !important;
+}
+
+.jezikDE {
+    left: 91%;
+}
+
+.jezikEN {
+    left: 94%;
+}
+
+.galerija {
+    background-image: url(../images/pokrovcki.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 0 45%;
+    height: calc(100vh - 130px);
+    width: 100vw;
+    filter: contrast(1.2);
+    /*Image by <a href="https://pixabay.com/users/sadeghshafiee91-21303188/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7595561">Sadegh Shafiee</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7595561">Pixabay</a>*/
+}
+
+.galerijaBg {
+    position: absolute;
+    background: rgb(255,255,255);
+    background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
+    height: 115px;
+    width: 620px;
+    top: 56%;
+    left: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, .2);
+}
+
+.galerijaBesedilo {
+    position: absolute;
+    font-family: "Manrope", sans-serif;
+    font-weight: 200;
+    font-size: 27.5px;
+    line-height: 1.3;
+    word-spacing: 2px;
+    padding: 40px 0 0 50px;
+}
+
+.info {
+    background-color: #f8f8f8;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+}
+
+.portfolio-item{
+	/*width:100%;*/
+    margin: 30px 0 30px 0;
+}
+
+.item:hover{
+/**/  
+}
+
+.portfolio-item .item{
+	/*width:303px;*/
+    padding: 5px;
+}
