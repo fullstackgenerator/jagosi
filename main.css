@@ -1025,7 +1025,7 @@ input[type="email"] {
   }
 
 
-@media(min-width: 1600px) and (orientation: landscape){
+@media(min-width: 1280px) and (orientation: landscape){
 
 /*glava in noga*/
 
@@ -1034,38 +1034,20 @@ header {
     top: 0;
     height: 130px;
     width: 100vw;
-    background-color: #f8f8f8;
     z-index: 10;
 }
 
 footer {
-    background-color: #4e4e4e;
-    font-family: "Arimo", sans-serif;
-    font-size: 14px;
-    color: #f8f8f8;
-    text-align: center;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer a {
-    text-decoration: none;
-    color: #f8f8f8 !important;
-    margin: 5px;
-    padding: 0;
+    font-size: 16px;
+    height: 20px;
 }
 
 .logo {
-    position: absolute;
-    background-image: url(https://epicdev.si/jagosi/images/jagosiNew.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 80%;
+    background-size: cover;
+    height: 100px;
     width: 250px;
-    left: 25%;
-    top: 11%;
+    top: 13%;
+    left: 30%;
  }
 
 /*meni*/
@@ -1075,25 +1057,15 @@ footer a {
 .jezikEN {
     position: absolute;
     font-family: "Arimo", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     visibility: visible;
 }
 
 .meni {
-    left: 62%;
-    top: 50%;
+    left: 60%;
+    top: 55%;
     transform: translate(-50%, -50%);
-}
-
-a {
-    text-decoration: none !important;
-    color: #7bcd16 !important;
-    margin-left: 30px;
-}
-
-a:hover {
-    color: #eb9705 !important;
 }
 
 .jezikDE,
@@ -1110,189 +1082,236 @@ a:hover {
     left: 94%;
 }
 
-/*prva stran*/
-
 .landing {
     background-image: url(https://epicdev.si/jagosi/images/stroj2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: contrast(1.2);
+    background-size: 105%;
+    background-position: 0 0;
     height: calc(100vh - 130px);
-    width: 100vw;
-    /*Photo by <a href="https://unsplash.com/@osmantalha?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Osman Talha Dikyar</a> on <a href="https://unsplash.com/photos/a-spool-of-yellow-wire-sitting-on-top-of-a-machine-1MZ9JjAXg1E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
 }
 
 .landingBg {
-    position: absolute;
-    background: rgb(255,255,255);
-    background: linear-gradient(31deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 48%, rgba(210,210,210,0.35) 100%);
-    height: 90px;
-    width: 700px;
-    top: 56%;
-    left: 0;
-    border-radius: 3px;
-    padding: 50px;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, .2);
+    top: 38%;
 }
 
 .landingBesedilo {
-    position: absolute;
-    font-family: "Manrope", sans-serif;
-    font-weight: 200;
-    font-size: 29px;
-    line-height: 1.3;
-    word-spacing: 2px;
-    padding-top: 40px;
+    font-size: 30px;
+    padding: 50px 0 130px 50px;
+    width: 32%;
 }
 
 .preveriPonudbo {
-    position: absolute;
-    bottom: 25%;
-    font-family: "Arimo", sans-serif;
-    font-size: 18px;
+    top: 68%;
+    font-size: 22px;
+    height: auto;
 }
 
-/*prijava na e-novice*/
-
 .enovice {
-    position: relative;
-    background-image: url(https://epicdev.si/jagosi/images/lego2.jpg);
-    background-size: 100%;
-    height: 40vh;
+    height: 50vh;
     width: 100vw;
-    background-position: 50% 60%;
-    opacity: 0.8;
-    filter: sepia(10%) contrast(1.3) hue-rotate(40deg) brightness(80%) saturate(140%);
-    /*https://unsplash.com/photos/blue-building-block-lot-TL5Vy1IM-uA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash*/
+    filter: contrast(1.2) hue-rotate(40deg) saturate(100%);
 }
 
 .enoviceBg {
-    position: absolute;
-    height: 120px;
-    width: 700px;
-    background-color: #f8f8f8c1;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, .2);
-    text-align: center;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    left: 30%;
-    top: 25%;
-    border-radius: 3px;
+    height: auto;
+    width: 100vw;
 }
 
 .enoviceBesedilo {
-    font-family: "Arimo", sans-serif;
-    font-size: 18px;
-    color: #000000;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    margin: 50px;
 }
 
 input[type="email"] {
-    font-size: 18px;
-    margin: 30px 10px 0 0;
-    border-radius: 3px;
-    color: #000000;
-    filter: brightness(100%);
-}
-
-.poslji {
-    color:#000000;
-    background-color: rgba(240, 240, 240, 0.5);
-    border: 1px solid #4e4e4e;
-    font-size: 18px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    border-radius: 3px;
+    width: 250px;
+    margin: 0 5px 50px 0;
 }
 
 .enoviceBesedilo,
 input[type="email"],
 .poslji {
-    font-family: "Arimo", sans-serif;
+    font-size: 22px;
 }
 
-/*osnovne informacije - "vaš idealni poslovni partner"*/
-
 .info {
-    background-color: #f8f8f8;
-    height: calc(100vh - 100px);
+    height: auto;
     width: 100vw;
-    justify-content: space-evenly; 
     display: flex;
+    justify-content: space-evenly; 
+    height: calc(90vh - 130px);
 }
 
 .zeleniTrak {
-    margin-top: 20px;
-    background-color: #7bcd16;
-    height: 30px;
-    width: 100vw;
-    font-family: "Arimo", sans-serif;
+    height: 40px;
     font-size: 30px;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .naslov {
-    height: 50px;
-    width: 300px;
-    font-family: "Arimo", sans-serif;
-    font-size: 24px;
-    color: #000000;
-    text-align: center;
-    margin: 10px 0 25px 0;
-    font-weight: 600;
+    width: auto;
+    font-size: 22px;
+    margin: 20px 0 25px 0;
 }
 
 .vsebinaEna,
 .vsebinaDva,
 .vsebinaTri {
-    position: relative;
-    height: 300px;
-    width: 300px;
-    font-family: "Arimo", sans-serif;
-    font-size: 20px;
-    color: #000000;
+    height: 350px;
+    width: 400px;
+    font-size: 22px;
     text-align: justify;
     line-height: 1.5;
-    word-spacing:-2px;
-    top: 23%;
-    padding: 50px;
-    border-radius: 3px;
-    border: 1px solid #4e4e4e;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, .2);
+    top: 25%;
+    padding: 30px;
 }
-
-.vsebinaEna {
-    background: rgb(255,152,67);
-    background: linear-gradient(61deg, rgba(255,152,67,0.4) 0%, rgba(248,255,90,0.3) 100%);
-}
-
-.vsebinaDva {
-    background: rgb(235,255,67);
-    background: linear-gradient(61deg, rgba(235,255,67,0.4) 0%, rgba(171,255,79,0.3) 50%, rgba(107,255,90,0.2) 100%);
-}
-
-.vsebinaTri {
-    background: rgb(67,255,79);
-    background: linear-gradient(61deg, rgba(67,255,79,0.4) 0%, rgba(79,255,185,0.3) 50%, rgba(90,255,237,0.2) 100%);
-}
-
-/*youtube posnetek*/
 
 .video {
-    position: relative;
-    left: 15%;
-    margin: 20px;
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    margin-top: 80px;
 }
 }
+
+@media(min-width: 1920px) and (orientation: landscape){
+
+    /*glava in noga*/
+    
+    header {
+        position: sticky;
+        top: 0;
+        height: 130px;
+        width: 100vw;
+        z-index: 10;
+    }
+    
+    footer {
+        font-size: 16px;
+        height: 20px;
+    }
+    
+    .logo {
+        background-size: cover;
+        height: 100px;
+        width: 250px;
+        top: 13%;
+        left: 30%;
+     }
+    
+    /*meni*/
+    
+    .meni,
+    .jezikDE,
+    .jezikEN {
+        position: absolute;
+        font-family: "Arimo", sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        visibility: visible;
+    }
+    
+    .meni {
+        left: 60%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .jezikDE,
+    .jezikEN {
+        top: 15%;
+        color: #4e4e4e !important;
+    }
+    
+    .jezikDE {
+        left: 91%;
+    }
+    
+    .jezikEN {
+        left: 94%;
+    }
+    
+    .landing {
+        background-image: url(https://epicdev.si/jagosi/images/stroj2.jpg);
+        background-size: 105%;
+        background-position: 0 0;
+        height: calc(100vh - 130px);
+    }
+    
+    .landingBg {
+        top: 38%;
+    }
+    
+    .landingBesedilo {
+        font-size: 30px;
+        padding: 50px 0 130px 50px;
+        width: 32%;
+    }
+    
+    .preveriPonudbo {
+        top: 68%;
+        font-size: 22px;
+        height: auto;
+    }
+    
+    .enovice {
+        height: 50vh;
+        width: 100vw;
+        filter: contrast(1.2) hue-rotate(40deg) saturate(100%);
+    }
+    
+    .enoviceBg {
+        height: auto;
+        width: 100vw;
+    }
+    
+    .enoviceBesedilo {
+        margin: 50px;
+    }
+    
+    input[type="email"] {
+        width: 250px;
+        margin: 0 5px 50px 0;
+    }
+    
+    .enoviceBesedilo,
+    input[type="email"],
+    .poslji {
+        font-size: 22px;
+    }
+    
+    .info {
+        height: auto;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly; 
+        height: calc(90vh - 130px);
+    }
+    
+    .zeleniTrak {
+        height: 40px;
+        font-size: 30px;
+    }
+    
+    .naslov {
+        width: auto;
+        font-size: 22px;
+        margin: 20px 0 25px 0;
+    }
+    
+    .vsebinaEna,
+    .vsebinaDva,
+    .vsebinaTri {
+        height: 350px;
+        width: 400px;
+        font-size: 22px;
+        text-align: justify;
+        line-height: 1.5;
+        top: 25%;
+        padding: 30px;
+    }
+    
+    .video {
+        position: absolute;
+        width: 60%;
+        height: 65%;
+        margin-top: 80px;
+    }
+    }
+    
