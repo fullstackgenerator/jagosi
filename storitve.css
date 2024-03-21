@@ -1,7 +1,6 @@
-
   /* Webkit (Chrome, Safari) */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 1em;
   }
   
   ::-webkit-scrollbar-track {
@@ -28,7 +27,6 @@
   body::-moz-scrollbar-thumb:hover {
     background: #555;
   }
-  
 
 body {
     background-color: #f8f8f8;
@@ -42,28 +40,31 @@ body {
 header {
     position: sticky;
     top: 0;
-    height: 130px;
-    width: 100vw;
-    background-color: #f8f8f8;
+    height: 8em;
+    width: auto;
+    background: #f8f8f8; 
     z-index: 10;
+    display: flex;
+    align-items: center;
 }
 
 footer {
     background-color: #4e4e4e;
     font-family: "Arimo", sans-serif;
-    font-size: 14px;
     color: #f8f8f8;
+    height: 1.5em;
     text-align: center;
-    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 0.8em;
+    bottom: 0;
 }
 
 footer a {
     text-decoration: none;
     color: #f8f8f8 !important;
-    margin: 5px;
+    margin: 0.2em;
     padding: 0;
 }
 
@@ -72,59 +73,155 @@ footer a {
     background-image: url(/images/jagosiNew.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 80%;
-    width: 250px;
-    left: 25%;
-    top: 10%;
+    height: 6.3em;
+    width: 15rem;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1rem;
  }
 
 /*meni*/
 
-.meni,
-.jezikDE,
-.jezikEN {
-    position: absolute;
-    font-family: "Arimo", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-}
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   left: 3.1em;
+   font-family: "Arimo", sans-serif;
+   z-index: 1;
+   -webkit-user-select: none;
+   user-select: none;
+   align-items: center;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: #232323;
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+    color: #eb9705
+ }
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 2.7em;
+   height: 1.8em;
+   position: absolute;
+   top: -0.15em;
+   left: -0.5em;
+   cursor: pointer;
+   opacity: 0;
+   z-index: 2;
+   -webkit-touch-callout: none;
+ }
 
-.meni {
-    left: 62%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   background: #4e4e4e;
+   border-radius: 0.15em;
+   z-index: 1;
+   transform-origin: 4px 0px;
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+   opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ #menu
+ {
+   position: absolute;
+   width: 7em;
+   margin: -100px 0 0 -50px;
+   padding: 8em 3em 1em 3em;
+   background: #f8f8f8;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 0.3em 0;
+   font-size: 1.4em;
+ }
 
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+ 
 a {
-  text-decoration: none !important;
-  color: #7bcd16 !important;
-  margin-left: 30px;
+    text-decoration: none !important;
+    color: #7bcd16 !important;
+    margin: 0 1rem 0 1em;
 }
 
 a:hover {
-  color: #eb9705 !important;
+    color: #eb9705 !important;
 }
 
 .jezikDE,
 .jezikEN {
-    top: 15%;
+    font-family: "Arimo", sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    right: 2.5em;
     color: #4e4e4e !important;
 }
 
 .jezikDE {
-    left: 91%;
+top: 2em;
 }
 
 .jezikEN {
-    left: 94%;
+  top: 3em;
 }
 
 .storitve {
     background-image: url(/images/95.png);
-    background-size: 105%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 90% 50%;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 8em);
     width: 100vw; 
 }
 
@@ -134,7 +231,9 @@ a:hover {
     background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
     height: 80px;
     width: 750px;
-    top: 63%;
+    top: 58%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     left: 0;
     border-radius: 3px;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, .2);
