@@ -87,7 +87,7 @@ footer a {
    display: block;
    position: relative;
    left: 3.1em;
-   top: 3.15em;
+   top: 0;
    font-family: "Arimo", sans-serif;
    z-index: 1;
    -webkit-user-select: none;
