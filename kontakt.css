@@ -50,7 +50,7 @@ header {
 
 footer {
     background-color: #4e4e4e;
-    font-family: "Arimo", sans-serif;
+    font-family: "Manrope", sans-serif;
     color: #f8f8f8;
     height: 1.5em;
     text-align: center;
@@ -70,7 +70,7 @@ footer a {
 
 .logo {
     position: absolute;
-    background-image: url(/images/jagosiNew.png);
+    background-image: url(https://epicdev.si/jagosi/images/jagosiNew.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 6.3em;
@@ -87,7 +87,7 @@ footer a {
    display: block;
    position: relative;
    left: 3.1em;
-   font-family: "Arimo", sans-serif;
+   font-family: "Manrope", sans-serif;
    z-index: 1;
    -webkit-user-select: none;
    user-select: none;
@@ -201,7 +201,7 @@ a:hover {
 
 .jezikDE,
 .jezikEN {
-    font-family: "Arimo", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 1.3em;
     position: absolute;
     right: 2.5em;
@@ -217,7 +217,7 @@ top: 2em;
 }
 
 .kontakt {
-  background-image: url(/images/kontakt.jpg);
+  background-image: url(https://epicdev.si/jagosi/images/kontakt.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 40%;
@@ -256,7 +256,7 @@ top: 2em;
   background-color: #7bcd16;
   height: 1.2em;
   width: 100vw;
-  font-family: "Arimo", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.8em;
   color: #fff;
   text-align: center;
@@ -278,7 +278,7 @@ top: 2em;
 }
 
 .podatki {
-  font-family: "Arimo", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.2em;
   color: #000000;
   line-height: 1.5;
@@ -293,3 +293,473 @@ top: 2em;
   padding: 1em;
   border: hidden;
 }
+
+@media(min-width: 320px) and (orientation: portrait) {
+  header {
+      height: 6em;
+  }
+  
+  footer {
+      font-size: 0.5em;
+  }
+  
+  .logo {
+      height: 4.5em;
+      width: 10rem;
+   }
+  
+   #menuToggle
+   {
+     left: 1.65em;
+     top: 0.2em;
+   }
+  
+   #menuToggle input:checked ~ span
+   {
+     opacity: 1;
+     transform: rotate(45deg) translate(-2px, -1px);
+     background: #232323;
+   }
+   
+   #menuToggle input:checked ~ span:nth-last-child(2)
+   {
+     transform: rotate(-45deg) translate(0, -1px);
+   }
+  
+   #menuToggle span
+   {
+     width: 1.9em;
+     height: 3px;
+     margin-bottom: 5px;
+   }
+   
+   #menu
+   {
+    width: 5.5em;
+    margin: 2em 0 0 -2.8em;
+    padding: 0 1.8em 0 3em;
+   }
+   
+   #menu li
+   {
+     font-size: 1.2em;
+     margin-top: -0.3em;
+     font-weight: 500;
+   }
+  
+  .jezikDE,
+  .jezikEN {
+      font-size: 1em;
+      right: 0.9em;
+  }
+  
+  .kontakt {
+      background-image: url(https://epicdev.si/jagosi/images/purple.jpg);
+      height: calc(100vh - 6em);
+      background-position: 48% 50%;
+      /*Photo by <a href="https://unsplash.com/@lukesouthern?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Luke Southern</a> on <a href="https://unsplash.com/photos/purple-rotary-telephone-k5o-cuu9E6g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  */
+  }
+  
+  .kontaktBg {
+      height: auto;
+      top: 70%;
+  }
+  
+  .kontaktBesedilo {
+      position: absolute;
+      font-family: "Manrope", sans-serif;
+      font-weight: 200;
+      line-height: 1.3;
+      word-spacing: 2px;
+      padding: 1em 1em 1em 1em;
+      font-size: 1.4em;
+      width: 12em;
+      height: auto;
+  }
+  
+  .zeleniTrak {
+      margin-top: 20px;
+      background-color: #7bcd16;
+      height: 1.2em;
+      width: 100vw;
+      font-family: "Manrope", sans-serif;
+      font-size: 1.3em;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+    .info {
+      background-color: #f8f8f8;
+      height: auto;
+      width: auto;
+  }
+
+    .podatki {
+      position: relative;
+      font-family: "Manrope", sans-serif;
+      font-size: 1.1em;
+      color: #000000;
+      line-height: 1.5;
+      word-spacing:2px;
+      text-align: center;
+      width: 80vw;
+      margin: 2em 2em 2em 1.8em;
+  }
+  
+  .map {
+    height: 35em;
+    width: auto;
+    border: hidden;
+    margin: 22em 0 0 -8.7em;
+  }
+  }
+  
+  @media(min-width: 568px) and (orientation: landscape) {
+  header {
+      height: 5em;
+  }
+  
+  footer {
+      font-size: 0.7em;
+  }
+  
+  .logo {
+      top: 0.8em;
+      height: 4em;
+      width: 9rem;
+   }
+  
+   #menuToggle {
+     left: 1.65em;
+     top: 0.2em;
+   }
+  
+   #menuToggle input:checked ~ span {
+     opacity: 1;
+     transform: rotate(45deg) translate(-2px, -1px);
+     background: #232323;
+   }
+   
+   #menuToggle input:checked ~ span:nth-last-child(2) {
+     transform: rotate(-45deg) translate(0, -1px);
+   }
+  
+   #menuToggle span {
+     width: 1.9em;
+     height: 3px;
+     margin-bottom: 5px;
+   }
+   
+   #menu
+   {
+    width: 5.5em;
+    margin: 0 0 0 -2.8em;
+    padding: 0 1.8em 0 3em;
+   }
+   
+   #menu li
+   {
+     font-size: 1.2em;
+     margin: -0.3em 0 -0.2em 0;
+     font-weight: 500;
+   }
+  
+  .jezikDE,
+  .jezikEN {
+      font-size: 1em;
+      right: 0.9em;
+  }
+  
+  .jezikDE {
+      top: 1.5em;
+  }
+    
+  .jezikEN {
+      top: 2.5em;
+  }
+  
+  .kontakt {
+    height: calc(100vh - 5em);
+  }
+  
+  .kontaktBg {
+    top: 61%;
+    height: auto;
+  }
+  
+  .kontaktBesedilo {
+    font-size: 1.1em;
+    width: 22em;
+    padding: 1em;
+  }
+  
+  .zeleniTrak {
+    margin-top: 20px;
+    background-color: #7bcd16;
+    height: 1.2em;
+    width: 100vw;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info {
+    background-color: #f8f8f8;
+    height: auto;
+    width: 100%;
+  }
+  
+  .podatki {
+    font-size: 1em;
+    font-family: "Manrope", sans-serif;
+    color: #000000;
+    word-spacing:2px;
+    line-height: 1.5;
+    padding: 0 1em;
+    width: calc(100% - 3em);
+    margin: 2em auto;
+    width: 100%;
+  }
+
+  .map {
+    height: 20em;
+    width: 80%;
+    border: hidden;
+    margin: 1em;
+  }
+  }
+  
+
+  @media(min-width: 768px) and (orientation: portrait) {
+    header {
+      height: 6em;
+    }
+ 
+    .kontakt {
+      background-image: url(https://epicdev.si/jagosi/images/purple.jpg);
+      height: calc(100vh - 6em);
+  }
+  
+  .kontaktBesedilo {
+      width: 22em;
+      height: auto;
+      font-size: 1.4em;
+  }
+  
+  .zeleniTrak {
+      font-size: 1.3em;
+  }
+
+    .info {
+      width: auto;
+  }
+
+    .podatki {
+      font-size: 1.2em;
+      width: 80vw;
+      margin: 2em 2em 2em 1.8em;
+  }
+  
+    .map {
+      height: 25em;
+      width: 80vw;
+      margin: 22em 0 0 -15.7em;
+  }
+  }
+  
+
+  @media(min-width: 1024px) and (orientation: landscape) {
+  header {
+      height: 5em;
+  }
+  
+  footer {
+      font-size: 0.7em;
+  }
+  
+  .logo {
+      top: 0.8em;
+      height: 4em;
+      width: 9rem;
+   }
+  
+   #menuToggle {
+     left: 1.65em;
+     top: 0.2em;
+   }
+  
+   #menuToggle input:checked ~ span {
+     opacity: 1;
+     transform: rotate(45deg) translate(-2px, -1px);
+     background: #232323;
+   }
+   
+   #menuToggle input:checked ~ span:nth-last-child(2) {
+     transform: rotate(-45deg) translate(0, -1px);
+   }
+  
+   #menuToggle span {
+     width: 1.9em;
+     height: 3px;
+     margin-bottom: 5px;
+   }
+   
+   #menu
+   {
+    width: 5.5em;
+    margin: 0 0 0 -2.8em;
+    padding: 0 1.8em 0 3em;
+   }
+   
+   #menu li
+   {
+     font-size: 1.2em;
+     margin: -0.3em 0 -0.2em 0;
+     font-weight: 500;
+   }
+  
+  .jezikDE,
+  .jezikEN {
+      font-size: 1em;
+      right: 0.9em;
+  }
+  
+  .jezikDE {
+      top: 1.5em;
+  }
+    
+  .jezikEN {
+      top: 2.5em;
+  }
+  
+  .kontakt {
+    height: calc(100vh - 5em);
+  }
+  
+  .kontaktBg {
+    top: 61%;
+    height: auto;
+  }
+  
+  .kontaktBesedilo {
+    font-size: 1.1em;
+    width: 22em;
+    padding: 1em;
+  }
+  
+  .zeleniTrak {
+    margin-top: 20px;
+    background-color: #7bcd16;
+    height: 1.2em;
+    width: 100vw;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info {
+    background-color: #f8f8f8;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .podatki {
+    font-size: 1em;
+    font-family: "Manrope", sans-serif;
+    color: #000000;
+    word-spacing:2px;
+    line-height: 1.5;
+    padding: 0 1em;
+    width: calc(100% - 3em);
+    margin: 2em auto;
+    width: 100%;
+  }
+
+  .map {
+    height: 20em;
+    width: 90%;
+    border: hidden;
+    margin: 0;
+  }
+  }
+  
+  @media(min-width: 1280px) and (orientation: landscape) {
+    header {
+      height: 8em;
+     }
+    .logo {
+      top: 1em;
+      height: 6em;
+      width: 15rem;
+     }
+    
+    #menuToggle {
+      left: 2.5em;
+      top: 0.3em;
+      }
+      
+    #menu {
+      width: 8em;
+      margin: 1em 0 0 -2.6em;
+      padding: 0 1.8em 1em 3em;
+      }
+      
+    #menu li {
+      font-size: 1.45em;
+      margin: 0 0 -0.5em 0;
+      }
+     
+    .jezikDE,
+    .jezikEN {
+      font-size: 1.2em;
+      right: 1.5em;
+     }
+     
+    .jezikDE {
+      top: 2.3em;
+     }
+       
+    .jezikEN {
+      top: 3.3em;
+     }
+
+    .kontaktBg {
+      top: 50%;
+    }
+
+    .kontaktBesedilo {
+      font-size: 1.4em;
+    }
+
+    .zeleniTrak {
+      font-size: 1.3em;
+    }
+
+    .podatki {
+      font-size: 1.2em;
+      padding: 0 1em;
+      margin: 1em auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    .map {
+      height: 80vh;
+      width: 90%;
+      border: hidden;
+      margin: 0;
+    }
+  }

@@ -38,77 +38,74 @@ body {
 /*glava in noga*/
 
 header {
-    position: sticky;
-    top: 0;
-    height: 8em;
-    width: auto;
-    background: #f8f8f8; 
-    z-index: 10;
-    display: flex;
-    align-items: center;
+  position: sticky;
+  top: 0;
+  height: 8em;
+  width: auto;
+  background: #f8f8f8; 
+  z-index: 10;
+  display: flex;
+  align-items: center;
 }
 
 footer {
-    background-color: #4e4e4e;
-    font-family: "Arimo", sans-serif;
-    color: #f8f8f8;
-    height: 1.5em;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8em;
-    bottom: 0;
+  background-color: #4e4e4e;
+  font-family: "Manrope", sans-serif;
+  color: #f8f8f8;
+  height: 1.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 footer a {
-    text-decoration: none;
-    color: #f8f8f8 !important;
-    margin: 0.2em;
-    padding: 0;
+  text-decoration: none;
+  color: #f8f8f8 !important;
+  margin: 0.2em;
+  padding: 0;
 }
 
 .logo {
-    position: absolute;
-    background-image: url(/images/jagosiNew.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 6.3em;
-    width: 15rem;
-    left: 50%;
-    transform: translate(-50%);
-    top: 1rem;
+  position: absolute;
+  background-image: url(https://epicdev.si/jagosi/images/jagosiNew.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 6.3em;
+  width: 15rem;
+  left: 50%;
+  transform: translate(-50%);
+  top: 1rem;
  }
 
 /*meni*/
 
- #menuToggle
- {
+ #menuToggle {
    display: block;
    position: relative;
    left: 3.1em;
-   top: 0;
-   font-family: "Arimo", sans-serif;
+   font-family: "Manrope", sans-serif;
    z-index: 1;
    -webkit-user-select: none;
    user-select: none;
    align-items: center;
  }
  
- #menuToggle a
- {
+ #menuToggle a {
    text-decoration: none;
    color: #232323;
    transition: color 0.3s ease;
  }
  
- #menuToggle a:hover
- {
+ #menuToggle a:hover {
     color: #eb9705
  }
  
- #menuToggle input
- {
+ #menuToggle input {
    display: block;
    width: 2.7em;
    height: 1.8em;
@@ -121,8 +118,7 @@ footer a {
    -webkit-touch-callout: none;
  }
 
- #menuToggle span
- {
+ #menuToggle span {
    display: block;
    width: 33px;
    height: 4px;
@@ -137,40 +133,34 @@ footer a {
    opacity 0.55s ease;
  }
  
- #menuToggle span:first-child
- {
+ #menuToggle span:first-child {
    transform-origin: 0% 0%;
  }
  
- #menuToggle span:nth-last-child(2)
- {
+ #menuToggle span:nth-last-child(2) {
    transform-origin: 0% 100%;
  }
  
- #menuToggle input:checked ~ span
- {
+ #menuToggle input:checked ~ span {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
    background: #232323;
  }
  
- #menuToggle input:checked ~ span:nth-last-child(3)
- {
+ #menuToggle input:checked ~ span:nth-last-child(3) {
    opacity: 0;
    transform: rotate(0deg) scale(0.2, 0.2);
  }
  
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
+ #menuToggle input:checked ~ span:nth-last-child(2) {
    transform: rotate(-45deg) translate(0, -1px);
  }
  
- #menu
- {
+ #menu {
    position: absolute;
-   width: 13em;
+   width: 7em;
    margin: -100px 0 0 -50px;
-   padding: 7.8em 3em 1em 3em;
+   padding: 8em 3em 1em 3em;
    background: #f8f8f8;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
@@ -179,46 +169,44 @@ footer a {
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
  
- #menu li
- {
-   padding: 0;
-   font-size: 1.4em;
+ #menu li {
+  padding: 0.3em 0;
+  font-size: 1.4em;
  }
 
- #menuToggle input:checked ~ ul
- {
+#menuToggle input:checked ~ ul {
    transform: none;
  }
  
 a {
-    text-decoration: none !important;
-    color: #7bcd16 !important;
-    margin: 0 1rem 0 1em;
+  text-decoration: none !important;
+  color: #7bcd16 !important;
+  margin: 0 1rem 0 1em;
 }
 
 a:hover {
-    color: #eb9705 !important;
+  color: #eb9705 !important;
 }
 
 .jezikDE,
 .jezikEN {
-    font-family: "Arimo", sans-serif;
-    font-size: 1.3em;
-    position: absolute;
-    right: 2.5em;
-    color: #4e4e4e !important;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3em;
+  position: absolute;
+  right: 2.5em;
+  color: #4e4e4e !important;
 }
 
 .jezikDE {
-top: 1.85em;
+  top: 2em;
 }
 
 .jezikEN {
-  top: 2.85em;
+  top: 3em;
 }
 
 .galerija {
-    background-image: url(../images/pokrovcki.jpg);
+    background-image: url(https://epicdev.si/jagosi/images/pokrovcki.jpg);
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: 0 45%;
@@ -266,3 +254,317 @@ top: 1.85em;
     padding: 0.15em;
 }
 
+@media(min-width: 320px) and (orientation: portrait) {
+  header {
+      height: 6em;
+  }
+  
+  footer {
+      font-size: 0.5em;
+  }
+  
+  .logo {
+      height: 4.5em;
+      width: 10rem;
+   }
+  
+   #menuToggle {
+     left: 1.65em;
+     top: 0.2em;
+   }
+  
+   #menuToggle input:checked ~ span {
+     opacity: 1;
+     transform: rotate(45deg) translate(-2px, -1px);
+     background: #232323;
+   }
+   
+   #menuToggle input:checked ~ span:nth-last-child(2) {
+     transform: rotate(-45deg) translate(0, -1px);
+   }
+  
+   #menuToggle span {
+     width: 1.9em;
+     height: 3px;
+     margin-bottom: 5px;
+   }
+   
+   #menu {
+    width: 10.3em;
+    margin: 2em 0 0 -2.8em;
+    padding: 0 1em 0 3em;
+   }
+   
+   #menu li {
+     font-size: 1.2em;
+     margin-top: -0.52em;
+     font-weight: 500;
+   }
+  
+  .jezikDE,
+  .jezikEN {
+      font-size: 1em;
+      right: 0.9em;
+  }
+
+  .jezikDE {
+    top: 1.95em;
+  }
+  
+  .jezikEN {
+    top: 2.95em;
+  }
+  
+  .galerija {
+      background-image: url(https://epicdev.si/jagosi/images/cups.jpg);
+      background-size: cover;
+      height: calc(100vh - 6em);
+      background-position: 0 50%;
+      /*Image by <a href="https://www.freepik.com/free-photo/collection-colorful-reusable-cups_11393005.htm#fromView=search&page=1&position=14&uuid=c18a0aec-c4c9-4a46-9440-e43fb2c25b3a">Freepik</a>*/
+  }
+  
+  .galerijaBg {
+      height: auto;
+      top: 70%;
+  }
+  
+  .galerijaBesedilo {
+      position: absolute;
+      font-family: "Manrope", sans-serif;
+      font-weight: 200;
+      line-height: 1.3;
+      word-spacing: 2px;
+      padding: 1em 0.5em 1em 1em;
+      font-size: 1.2em;
+      width: 12em;
+      height: auto;
+  }
+
+    .info {
+      background-color: #f8f8f8;
+      height: auto;
+      width: auto;
+      overflow-x: hidden !important;
+  }
+
+    .item {
+      position: relative;
+      left: -1em;
+  }
+
+  .portfolio-item {
+      margin: 1.3em 0 1.3em 0;
+}
+
+  .portfolio-item .item {
+      padding: 0.15em;
+  }
+}
+  
+  @media(min-width: 568px) and (orientation: landscape) {
+    header {
+      height: 5em;
+  }
+  
+  footer {
+      font-size: 0.7em;
+  }
+  
+  .logo {
+      top: 0.8em;
+      height: 4em;
+      width: 9rem;
+   }
+  
+   #menuToggle {
+     left: 1.65em;
+     top: 0.2em;
+   }
+  
+   #menuToggle input:checked ~ span {
+     opacity: 1;
+     transform: rotate(45deg) translate(-2px, -1px);
+     background: #232323;
+   }
+   
+   #menuToggle input:checked ~ span:nth-last-child(2) {
+     transform: rotate(-45deg) translate(0, -1px);
+   }
+  
+   #menuToggle span {
+     width: 1.9em;
+     height: 3px;
+     margin-bottom: 5px;
+   }
+   
+   #menu
+   {
+    width: 10.3em;
+    margin: -0.6em 0 0 -2.8em;
+    padding: 0.5em 1.8em 1em 3em;
+   }
+   
+   #menu li
+   {
+     font-size: 1.2em;
+     margin: -0.4em 0 -0.35em 0;
+     font-weight: 500;
+   }
+  
+  .jezikDE,
+  .jezikEN {
+      font-size: 1em;
+      right: 0.9em;
+  }
+  
+  .jezikDE {
+      top: 1.45em;
+  }
+    
+  .jezikEN {
+      top: 2.45em;
+  }
+  
+  .galerija {
+    height: calc(100vh - 5em);
+  }
+  
+  .galerijaBg {
+    top: 61%;
+  }
+  
+  .galerijaBesedilo {
+    font-size: 1.1em;
+    height: auto;
+    width: 17em;
+    padding: 1em;
+  }
+  
+  .info {
+    background-color: #f8f8f8;
+    height: auto;
+    width: 100%;
+  }
+
+  .info {
+    background-color: #f8f8f8;
+    height: auto;
+    width: auto;
+    overflow-x: hidden !important;
+}
+
+  .item {
+    position: relative;
+    left: -1em;
+}
+
+  .portfolio-item {
+      margin: 1.3em 0 0;
+  }
+
+  .portfolio-item .item {
+      padding: 0.15em;
+}
+}
+
+@media(min-width: 768px) and (orientation: portrait) {
+  .galerijaBg {
+      width: 17em;
+      top: 70%;
+  }
+
+  .galerijaBesedilo {
+      font-size: 1.4em;
+  }
+  }
+  
+  @media(min-width: 1024px) and (orientation: landscape) {
+  .galerija {
+    background-image: url(https://epicdev.si/jagosi/images/pokrovcki.jpg);
+    height: calc(100vh - 5em);
+    background-size: cover;
+    background-position: 80% 50%;
+  }
+  
+  .galerijaBg {
+    top: 50%;
+    left: 0;
+    transform: translate(-50% -50%);
+    height: auto;
+  }
+  
+  .galerijaBesedilo {
+    font-size: 1.4em;
+    width: 17em;
+    padding: 1em;
+  }
+  
+  .zeleniTrak {
+    font-size: 1.2em;
+  }
+  }
+  
+  @media(min-width: 1280px) and (orientation: landscape) {
+    header {
+      height: 8em;
+     }
+    .logo {
+      top: 1em;
+      height: 6em;
+      width: 15rem;
+     }
+    
+    #menuToggle {
+      left: 2.5em;
+      top: 0.3em;
+      }
+      
+    #menu {
+      width: 12.8em;
+      margin: 0.9em 0 0 -2.6em;
+      padding: 0 1.8em 1em 3em;
+      }
+      
+    #menu li {
+      font-size: 1.45em;
+      margin: -0.1em 0 -0.60em 0;
+      }
+     
+    .jezikDE,
+    .jezikEN {
+      font-size: 1.2em;
+      right: 1.5em;
+     }
+     
+    .jezikDE {
+      top: 2.2em;
+     }
+       
+    .jezikEN {
+      top: 3.2em;
+     }
+     
+     .galerija {
+      background-image: url(https://epicdev.si/jagosi/images/pokrovcki.jpg);
+      height: calc(100vh - 8em);
+      background-size: cover;
+      background-position: 80% 50%;
+    }
+    
+    .galerijaBg {
+      top: 53%;
+      left: 0;
+      transform: translate(-50% -50%);
+      height: auto;
+    }
+    
+    .galerijaBesedilo {
+      font-size: 1.4em;
+      width: 17em;
+      padding: 1em;
+    }
+    
+    .zeleniTrak {
+      font-size: 1.2em;
+    }
+  }

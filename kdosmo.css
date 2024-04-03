@@ -33,49 +33,48 @@
   }
 
   header {
-      position: sticky;
-      top: 0;
-      height: 8em;
-      width: auto;
-      background: #f8f8f8; 
-      z-index: 10;
-      display: flex;
-      align-items: center;
+    position: sticky;
+    top: 0;
+    height: 8em;
+    width: auto;
+    background: #f8f8f8; 
+    z-index: 10;
+    display: flex;
+    align-items: center;
   }
 
   footer {
-      background-color: #4e4e4e;
-      font-family: "Manrope", sans-serif;
-      color: #f8f8f8;
-      height: 1.5em;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8em;
-      bottom: 0;
-      width: 100vw;
+    background-color: #4e4e4e;
+    font-family: "Manrope", sans-serif;
+    color: #f8f8f8;
+    height: 1.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    bottom: 0;
+    width: 100vw;
   }
 
   footer a {
-      text-decoration: none;
-      color: #f8f8f8 !important;
-      margin: 0.2em;
-      padding: 0;
+    text-decoration: none;
+    color: #f8f8f8 !important;
+    margin: 0.2em;
+    padding: 0;
   }
 
   .logo {
-      position: absolute;
-      background-image: url(https://epicdev.si/jagosi/images/jagosiNew.png);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      left: 50%;
-      transform: translate(-50%);
-      top: 1rem;
+    position: absolute;
+    background-image: url(https://epicdev.si/jagosi/images/jagosiNew.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1rem;
   }
 
-  #menuToggle
-  {
+  #menuToggle {
     display: block;
     position: relative;
     left: 3.1em;
@@ -86,20 +85,17 @@
     align-items: center;
   }
   
-  #menuToggle a
-  {
+  #menuToggle a {
     text-decoration: none;
     color: #232323;
     transition: color 0.3s ease;
   }
   
-  #menuToggle a:hover
-  {
-      color: #eb9705
+  #menuToggle a:hover {
+    color: #eb9705
   }
   
-  #menuToggle input
-  {
+  #menuToggle input {
     display: block;
     width: 2.7em;
     height: 1.8em;
@@ -112,8 +108,7 @@
     -webkit-touch-callout: none;
   }
 
-  #menuToggle span
-  {
+  #menuToggle span {
     display: block;
     width: 33px;
     height: 4px;
@@ -128,36 +123,30 @@
     opacity 0.55s ease;
   }
   
-  #menuToggle span:first-child
-  {
+  #menuToggle span:first-child {
     transform-origin: 0% 0%;
   }
   
-  #menuToggle span:nth-last-child(2)
-  {
+  #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
   
-  #menuToggle input:checked ~ span
-  {
+  #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
   }
   
-  #menuToggle input:checked ~ span:nth-last-child(3)
-  {
+  #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
   
-  #menuToggle input:checked ~ span:nth-last-child(2)
-  {
+  #menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
   
-  #menu
-  {
+  #menu {
     position: absolute;
     width: 7em;
     margin: -100px 0 0 -50px;
@@ -170,106 +159,104 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
   
-  #menu li
-  {
+  #menu li {
     padding: 0.3em 0;
     font-size: 1.4em;
   }
 
-  #menuToggle input:checked ~ ul
-  {
+  #menuToggle input:checked ~ ul {
     transform: none;
   }
   
   a {
-      text-decoration: none !important;
-      color: #7bcd16 !important;
-      margin: 0 1rem 0 1em;
+    text-decoration: none !important;
+    color: #7bcd16 !important;
+    margin: 0 1rem 0 1em;
   }
 
   a:hover {
-      color: #eb9705 !important;
+    color: #eb9705 !important;
   }
 
   .jezikDE,
   .jezikEN {
-      font-family: "Manrope", sans-serif;
-      font-size: 1.3em;
-      position: absolute;
-      right: 2.5em;
-      color: #4e4e4e !important;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    right: 2.5em;
+    color: #4e4e4e !important;
   }
 
   .jezikDE {
-      top: 2em;
+    top: 2em;
   }
 
   .jezikEN {
-      top: 3em;
+    top: 3em;
   }
 
   .stroj {
-      background-image: url(https://epicdev.si/jagosi/images/stroj5.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 80%;
-      height: calc(100vh - 8em);
-      width: 100%;
+    background-image: url(https://epicdev.si/jagosi/images/stroj5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 80%;
+    height: calc(100vh - 8em);
+    width: 100%;
   }
 
   .strojBg {
-      background: rgb(255,255,255);
-      background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
-      height: auto;
-      top: 38%;
-      left: 0;
-      border-radius: 0.15em;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    background: rgb(255,255,255);
+    background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
+    height: auto;
+    top: 38%;
+    left: 0;
+    border-radius: 0.15em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
 
   .strojBesedilo {
-      position: relative;
-      font-family: "Manrope", sans-serif;
-      font-weight: 200;
-      font-size: 1.8em;
-      line-height: 1.3;
-      word-spacing: 0.1em;
-      padding: 1.2em;
-      width: 20.8em;
+    position: relative;
+    font-family: "Manrope", sans-serif;
+    font-weight: 200;
+    font-size: 1.8em;
+    line-height: 1.3;
+    word-spacing: 0.1em;
+    padding: 1.2em;
+    width: 20.8em;
   }
 
   .zeleniTrak {
-      margin-top: 20px;
-      background-color: #7bcd16;
-      height: 1.2em;
-      width: 100vw;
-      font-family: "Manrope", sans-serif;
-      font-size: 1.8em;
-      color: #fff;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    margin-top: 20px;
+    background-color: #7bcd16;
+    height: 1.2em;
+    width: 100vw;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .kdoSmo {
-      background-color: #f8f8f8;
-      height: auto;
+    background-color: #f8f8f8;
+    height: auto;
   }
 
   .naslov {
-      font-family: "Manrope", sans-serif;
-      font-size: 1.5em;
-      color: #7bcd16;
-      text-align: left;
-      margin: 0.5em 0 0.5em 0;
-      font-weight: 400;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.5em;
+    color: #7bcd16;
+    text-align: left;
+    margin: 0.5em 0 0.5em 0;
+    font-weight: 400;
   }
 
   .predstavitev,
   .zaposlitev,
   .osebna {
-      font-size: 1.2em;
+    font-size: 1.2em;
   }
 
   .predstavitev {
@@ -280,16 +267,22 @@
   .zaposlitev,
   .osebna,
   .podatki {
-      font-family: "Manrope", sans-serif;
-      color: #000000;
-      text-align: justify;
-      line-height: 1.5;
-      word-spacing:-2px;
+    font-family: "Manrope", sans-serif;
+    color: #000000;
+    text-align: justify;
+    line-height: 1.5;
+    word-spacing:-2px;
   }
 
   .zaposlitev {
     margin: -7em 0 2em 0;
   }
+
+  .video {
+   margin-left: 50%;
+   transform: translate(-50%);
+   padding: 1em;
+}
 
 
 @media(max-width: 320px) and (orientation: portrait) {
@@ -360,12 +353,11 @@ footer {
 }
 
 .stroj {
-    background-image: url(https://epicdev.si/jagosi/images/tubaM.jpg);
+    background-image: url(https://epicdev.si/jagosi/images/tuba.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 6em);
     width: 100vw;
-    background-position: 52% 0;
     filter: contrast(1.2);
     /*Photo by <a href="https://unsplash.com/@justatony?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tony Litvyak</a> on <a href="https://unsplash.com/photos/a-tube-of-cream-sitting-on-top-of-a-pile-of-black-rocks-zYJbeqTp0fU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
 }
@@ -440,6 +432,11 @@ footer {
 .podatki {
     padding-bottom: 2.5em;
 }
+
+.video {
+  width: 90%;
+  height: 100%;
+}
 }
 
 @media(min-width: 360px) and (orientation: portrait) {
@@ -484,7 +481,7 @@ footer {
 }
 
 .logo {
-  top: 0.8em;
+    top: 0.8em;
     height: 4em;
     width: 9rem;
  }
@@ -598,48 +595,13 @@ footer {
 .podatki {
   word-spacing: 2px;
 }
+
+.video {
+  width: 90%;
+  height: 20em;
 }
-/*
-@media(min-width: 640px) and (orientation: landscape) {
-
-}
-
-@media(min-width: 667px) and (orientation: landscape) {
-
 }
 
-@media(min-width: 736px) and (orientation: landscape) {
-
-}
-
-@media(min-width: 760px) and (orientation: landscape) {
-
-}
-
-@media(min-width: 800px) and (orientation: landscape) {
-
-}
-
-@media(min-width: 812px) and (orientation: landscape) {
-
-}
-
-@media(min-width: 844px) and (orientation: landscape) {
-
-}
-
-@media(min-width: 883px) and (orientation: landscape) {
-
-}
-
-@media(min-width: 915px) and (orientation: landscape) {
-
-}
-
-@media(min-width: 926px) and (orientation: landscape) {
-
-}
-*/
 @media(min-width: 768px) and (orientation: portrait) {
   .strojBesedilo {
     font-family: "Manrope", sans-serif;
@@ -681,6 +643,12 @@ footer {
   .zaposlitev {
     margin-top: -5em;
 }
+
+  .video {
+    width: 90%;
+    height: 20em;
+    margin-top: -3em;
+}
 }
 
 @media(min-width: 1024px) and (orientation: landscape) {
@@ -710,7 +678,7 @@ footer {
     background: rgb(255,255,255);
     background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
     height: auto;
-    top: 38% !important;
+    top: 38%;
     left: 0;
     border-radius: 0.15em;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -729,7 +697,7 @@ footer {
   .zeleniTrak {
     font-size: 1.3em;
 }
- 
+
   .kdoSmo {
     display: grid;
     background-color: #f8f8f8;
@@ -757,6 +725,11 @@ footer {
   .zaposlitev {
     margin: -10em 8em 0 6em;
 }
+
+  .video {
+    width: 90%;
+    height: 25em;
+}
 }
 
 @media(min-width: 820px) and (orientation: portrait) {
@@ -764,7 +737,7 @@ footer {
     height: 6em;
   }
   
-.stroj {
+  .stroj {
     height: calc(100vh - 6em);
 }
 
@@ -775,14 +748,8 @@ footer {
   }
 
   .kdoSmo {
-    display: grid;
-    background-color: #f8f8f8;
-    height: auto;
-    width: 80%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30%;
     gap: 2em;
-    justify-content: space-evenly; 
     margin: 2em;
 }
 
@@ -796,46 +763,89 @@ footer {
   .zaposlitev {
     margin-top: -5em;
 }
+
+  .video {
+    height: 25em;
+}
 }
 
 @media(min-width: 1180px) and (orientation: landscape) {
+  .predstavitev,
+  .podatki,
+  .zaposlitev {
+    padding: 1em;
+    margin: 0 8em 0 8em;
+}
 
+  .zaposlitev {
+    margin: -10em 8em 3em 8em;
+}
+
+  .video {
+    height: 30em;
+  }
 }
 
 @media(min-width: 1024px) and (orientation: portrait) {
   .strojBesedilo {
     width: 25em;
- }
+}
+
+  .video {
+    height: 30em;
+  }
 }
 
 @media(min-width: 1280px) and (orientation: landscape) {
   header {
-    height: 6em;
- }
- 
+    height: 8em;
+   }
   .logo {
-    top: 0.6em;
+    top: 1em;
     height: 6em;
-    width: 12rem;
-  }
-
-  .jezikDE {
-    top: 2em;
-}
+    width: 15rem;
+   }
   
+  #menuToggle {
+    left: 2.5em;
+    top: 0.3em;
+    }
+    
+  #menu {
+    width: 8em;
+    margin: 1em 0 0 -2.6em;
+    padding: 0 1.8em 1em 3em;
+    }
+    
+  #menu li {
+    font-size: 1.45em;
+    margin: 0 0 -0.5em 0;
+    }
+   
+  .jezikDE,
   .jezikEN {
-    top: 3em;
-}
-
+    font-size: 1.2em;
+    right: 1.5em;
+   }
+   
+  .jezikDE {
+    top: 2.3em;
+   }
+     
+  .jezikEN {
+    top: 3.3em;
+   }
+   
   .stroj {
-    height: calc(100vh - 6em);
+    height: calc(100vh - 8em);
   }
   
   .strojBg {
     background: rgb(255,255,255);
     background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
     height: auto;
-    top: 38% !important;
+    top: 60%;
+    transform: translate(-50% 0);
     left: 0;
     border-radius: 0.15em;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -844,7 +854,7 @@ footer {
   .strojBesedilo {
     font-family: "Manrope", sans-serif;
     font-weight: 200;
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.3;
     word-spacing: 0.1em;
     padding: 1.2em;
@@ -852,19 +862,14 @@ footer {
 }
 
   .zeleniTrak {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
  
   .kdoSmo {
-    display: grid;
-    background-color: #f8f8f8;
-    height: auto;
-    width: 80%;
     grid-template-columns: 70% 40%;
     grid-template-rows: 30%;
     gap: 3em;
-    justify-content: space-evenly; 
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
   .naslov {
@@ -876,23 +881,41 @@ footer {
   .podatki,
   .zaposlitev {
     padding: 1em;
-    margin: 0 8em 0 6em;
+    margin: 0 8em 0 7em;
 }
 
   .zaposlitev {
-    margin: -10em 8em 0 6em;
+    margin: -10em 8em 3em 7em;
+}
+
+  .video {
+    height: 35em;
 }
 }
 
 @media(min-width: 1366px) and (orientation: landscape) {
   .zaposlitev {
-    margin: -12em 8em 0 6em;
+    margin: -12em 8em 0 7em;
 }
 }
 
 @media(min-width: 1400px) and (orientation: landscape) {
+  .strojBg {
+    top: 45%;
+  }
+  
   .strojBesedilo {
-    font-size: 1.5em;
+    font-size: 1.4em;
+}
+
+  .predstavitev,
+  .podatki,
+  .zaposlitev {
+    margin: 0 8em 0 8em;
+}
+
+  .zaposlitev {
+    margin: -13em 8em 3em 8em;
 }
 }
 
@@ -900,12 +923,11 @@ footer {
   .predstavitev,
   .podatki,
   .zaposlitev {
-    padding: 1em;
-    margin: 0 8em 0 8em;
+    margin: 0 8em 3em 9em;
 }
 
   .zaposlitev {
-    margin: -12em 8em 0 8em;
+    margin: -12em 8em 3em 9em;
 }
 }
 
@@ -918,5 +940,9 @@ footer {
 
   .zaposlitev {
     margin: -12em 8em 0 12em;
+}
+
+  .video {
+    height: 50em;
 }
 }
