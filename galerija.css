@@ -1,32 +1,32 @@
-  /* Webkit (Chrome, Safari) */
-  ::-webkit-scrollbar {
-    width: 1em;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  
-  /* Firefox */
-  body {
-    scrollbar-color: #f1f1f1 #f1f1f1;
-  }
-  
-  body::-moz-scrollbar-thumb {
-    background: #888;
-  }
-  
-  body::-moz-scrollbar-thumb:hover {
-    background: #555;
-  }
+/* Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox */
+body {
+  scrollbar-color: #f1f1f1 #f1f1f1;
+}
+
+body::-moz-scrollbar-thumb {
+  background: #888;
+}
+
+body::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
 
 body {
     background-color: #f8f8f8;
@@ -85,88 +85,88 @@ footer a {
 /*meni*/
 
  #menuToggle {
-   display: block;
-   position: relative;
-   left: 3.1em;
-   font-family: "Manrope", sans-serif;
-   z-index: 1;
-   -webkit-user-select: none;
-   user-select: none;
-   align-items: center;
+  display: block;
+  position: relative;
+  left: 3.1em;
+  font-family: "Manrope", sans-serif;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  align-items: center;
  }
  
  #menuToggle a {
-   text-decoration: none;
-   color: #232323;
-   transition: color 0.3s ease;
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
  }
  
  #menuToggle a:hover {
-    color: #eb9705
+  color: #eb9705
  }
  
  #menuToggle input {
-   display: block;
-   width: 2.7em;
-   height: 1.8em;
-   position: absolute;
-   top: -0.15em;
-   left: -0.5em;
-   cursor: pointer;
-   opacity: 0;
-   z-index: 2;
-   -webkit-touch-callout: none;
+  display: block;
+  width: 2.7em;
+  height: 1.8em;
+  position: absolute;
+  top: -0.15em;
+  left: -0.5em;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
  }
 
  #menuToggle span {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   background: #4e4e4e;
-   border-radius: 0.15em;
-   z-index: 1;
-   transform-origin: 4px 0px;
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-   opacity 0.55s ease;
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #4e4e4e;
+  border-radius: 0.15em;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
  }
  
  #menuToggle span:first-child {
-   transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
  }
  
  #menuToggle span:nth-last-child(2) {
-   transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
  }
  
  #menuToggle input:checked ~ span {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
  }
  
  #menuToggle input:checked ~ span:nth-last-child(3) {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
  }
  
  #menuToggle input:checked ~ span:nth-last-child(2) {
-   transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(0, -1px);
  }
  
  #menu {
-   position: absolute;
-   width: 7em;
-   margin: -100px 0 0 -50px;
-   padding: 8em 3em 1em 3em;
-   background: #f8f8f8;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  position: absolute;
+  width: 7em;
+  margin: -100px 0 0 -50px;
+  padding: 8em 3em 1em 3em;
+  background: #f8f8f8;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
  
  #menu li {
@@ -206,87 +206,87 @@ a:hover {
 }
 
 .galerija {
-    background-image: url(https://epicdev.si/jagosi/images/pokrovcki.jpg);
-    background-size: 110%;
-    background-repeat: no-repeat;
-    background-position: 0 45%;
-    height: calc(100vh - 8em);
-    width: 100vw;
-    filter: contrast(1.2);
-    /*Image by <a href="https://pixabay.com/users/sadeghshafiee91-21303188/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7595561">Sadegh Shafiee</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7595561">Pixabay</a>*/
+  background-image: url(https://epicdev.si/jagosi/images/pokrovcki.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 0 45%;
+  height: calc(100vh - 8em);
+  width: 100vw;
+  filter: contrast(1.2);
+  /*Image by <a href="https://pixabay.com/users/sadeghshafiee91-21303188/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7595561">Sadegh Shafiee</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7595561">Pixabay</a>*/
 }
 
 .galerijaBg {
-    position: absolute;
-    background: rgb(255,255,255);
-    background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
-    height: 4em;
-    width: 22em;
-    top: 51%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    left: 0;
-    border-radius: 0.15em;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, .2);
+  position: absolute;
+  background: rgb(255,255,255);
+  background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
+  height: 4em;
+  width: 22em;
+  top: 51%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  left: 0;
+  border-radius: 0.15em;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, .2);
 }
 
 .galerijaBesedilo {
-    position: absolute;
-    font-family: "Manrope", sans-serif;
-    font-weight: 200;
-    font-size: 1.8em;
-    line-height: 1.3;
-    word-spacing: 2px;
-    padding: 1.4em 0 0 1.4em;
+  position: absolute;
+  font-family: "Manrope", sans-serif;
+  font-weight: 200;
+  font-size: 1.8em;
+  line-height: 1.3;
+  word-spacing: 2px;
+  padding: 1.4em 0 0 1.4em;
 }
 
 .info {
-    background-color: #f8f8f8;
-    width: 100vw;
-    height: 100%;
+  background-color: #f8f8f8;
+  width: 100vw;
+  height: 100%;
 }
 
 .portfolio-item {
-    margin: 1.3em 0 1.3em 0;
+  margin: 1.3em 0 1.3em 0;
 }
 
 .portfolio-item .item {
-    padding: 0.15em;
+  padding: 0.15em;
 }
 
 @media(min-width: 320px) and (orientation: portrait) {
   header {
-      height: 6em;
+    height: 6em;
   }
   
   footer {
-      font-size: 0.5em;
+    font-size: 0.5em;
   }
   
   .logo {
-      height: 4.5em;
-      width: 10rem;
+    height: 4.5em;
+    width: 10rem;
    }
   
-   #menuToggle {
-     left: 1.65em;
-     top: 0.2em;
+  #menuToggle {
+    left: 1.65em;
+    top: 0.2em;
    }
   
-   #menuToggle input:checked ~ span {
-     opacity: 1;
-     transform: rotate(45deg) translate(-2px, -1px);
-     background: #232323;
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
    }
    
-   #menuToggle input:checked ~ span:nth-last-child(2) {
-     transform: rotate(-45deg) translate(0, -1px);
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
    }
   
-   #menuToggle span {
-     width: 1.9em;
-     height: 3px;
-     margin-bottom: 5px;
+  #menuToggle span {
+    width: 1.9em;
+    height: 3px;
+    margin-bottom: 5px;
    }
    
    #menu {
@@ -295,16 +295,16 @@ a:hover {
     padding: 0 1em 0 3em;
    }
    
-   #menu li {
-     font-size: 1.2em;
-     margin-top: -0.52em;
-     font-weight: 500;
+  #menu li {
+    font-size: 1.2em;
+    margin-top: -0.52em;
+    font-weight: 500;
    }
   
   .jezikDE,
   .jezikEN {
-      font-size: 1em;
-      right: 0.9em;
+    font-size: 1em;
+    right: 0.9em;
   }
 
   .jezikDE {
@@ -316,113 +316,111 @@ a:hover {
   }
   
   .galerija {
-      background-image: url(https://epicdev.si/jagosi/images/cups.jpg);
-      background-size: cover;
-      height: calc(100vh - 6em);
-      background-position: 0 50%;
-      /*Image by <a href="https://www.freepik.com/free-photo/collection-colorful-reusable-cups_11393005.htm#fromView=search&page=1&position=14&uuid=c18a0aec-c4c9-4a46-9440-e43fb2c25b3a">Freepik</a>*/
+    background-image: url(https://epicdev.si/jagosi/images/cups.jpg);
+    background-size: cover;
+    height: calc(100vh - 6em);
+    background-position: 0 50%;
+    /*Image by <a href="https://www.freepik.com/free-photo/collection-colorful-reusable-cups_11393005.htm#fromView=search&page=1&position=14&uuid=c18a0aec-c4c9-4a46-9440-e43fb2c25b3a">Freepik</a>*/
   }
   
   .galerijaBg {
-      height: auto;
-      top: 70%;
+    height: auto;
+    top: 69%;
   }
   
   .galerijaBesedilo {
-      position: absolute;
-      font-family: "Manrope", sans-serif;
-      font-weight: 200;
-      line-height: 1.3;
-      word-spacing: 2px;
-      padding: 1em 0.5em 1em 1em;
-      font-size: 1.2em;
-      width: 12em;
-      height: auto;
+    position: absolute;
+    font-family: "Manrope", sans-serif;
+    font-weight: 200;
+    line-height: 1.3;
+    word-spacing: 2px;
+    padding: 1em 0.5em 1em 1em;
+    font-size: 1.3em;
+    width: 11em;
+    height: auto;
   }
 
-    .info {
-      background-color: #f8f8f8;
-      height: auto;
-      width: auto;
-      overflow-x: hidden !important;
+  .info {
+    background-color: #f8f8f8;
+    height: auto;
+    width: auto;
+    overflow-x: hidden !important;
   }
 
-    .item {
-      position: relative;
-      left: -1em;
+  .item {
+    position: relative;
+    left: -1em;
   }
 
   .portfolio-item {
-      margin: 1.3em 0 1.3em 0;
-}
+    margin: 1.3em 0 1.3em 0;
+  }
 
   .portfolio-item .item {
-      padding: 0.15em;
+    padding: 0.15em;
   }
 }
   
   @media(min-width: 568px) and (orientation: landscape) {
-    header {
-      height: 5em;
+  header {
+    height: 5em;
   }
   
   footer {
-      font-size: 0.7em;
+    font-size: 0.7em;
   }
   
   .logo {
-      top: 0.8em;
-      height: 4em;
-      width: 9rem;
-   }
+    top: 0.8em;
+    height: 4em;
+    width: 9rem;
+  }
   
-   #menuToggle {
-     left: 1.65em;
-     top: 0.2em;
-   }
+  #menuToggle {
+    left: 1.65em;
+    top: 0.2em;
+  }
   
-   #menuToggle input:checked ~ span {
-     opacity: 1;
-     transform: rotate(45deg) translate(-2px, -1px);
-     background: #232323;
-   }
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
    
-   #menuToggle input:checked ~ span:nth-last-child(2) {
-     transform: rotate(-45deg) translate(0, -1px);
-   }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
   
-   #menuToggle span {
-     width: 1.9em;
-     height: 3px;
-     margin-bottom: 5px;
-   }
+  #menuToggle span {
+    width: 1.9em;
+    height: 3px;
+    margin-bottom: 5px;
+  }
    
-   #menu
-   {
+  #menu {
     width: 10.3em;
     margin: -0.6em 0 0 -2.8em;
     padding: 0.5em 1.8em 1em 3em;
-   }
+  }
    
-   #menu li
-   {
-     font-size: 1.2em;
-     margin: -0.4em 0 -0.35em 0;
-     font-weight: 500;
-   }
+  #menu li {
+    font-size: 1.2em;
+    margin: -0.4em 0 -0.35em 0;
+    font-weight: 500;
+  }
   
   .jezikDE,
   .jezikEN {
-      font-size: 1em;
-      right: 0.9em;
+    font-size: 1em;
+    right: 0.9em;
   }
   
   .jezikDE {
-      top: 1.45em;
+    top: 1.45em;
   }
     
   .jezikEN {
-      top: 2.45em;
+    top: 2.45em;
   }
   
   .galerija {
@@ -451,32 +449,32 @@ a:hover {
     height: auto;
     width: auto;
     overflow-x: hidden !important;
-}
+  }
 
   .item {
     position: relative;
     left: -1em;
-}
+  }
 
   .portfolio-item {
-      margin: 1.3em 0 0;
+    margin: 1.3em 0 0;
   }
 
   .portfolio-item .item {
-      padding: 0.15em;
-}
+    padding: 0.15em;
+  }
 }
 
 @media(min-width: 768px) and (orientation: portrait) {
   .galerijaBg {
-      width: 17em;
-      top: 70%;
+    width: 17em;
+    top: 67%;
   }
 
   .galerijaBesedilo {
-      font-size: 1.4em;
+    font-size: 1.4em;
   }
-  }
+}
   
   @media(min-width: 1024px) and (orientation: landscape) {
   .galerija {
@@ -498,73 +496,70 @@ a:hover {
     width: 17em;
     padding: 1em;
   }
+}
   
+  @media(min-width: 1280px) and (orientation: landscape) {
+  header {
+    height: 8em;
+  }
+
+  .logo {
+    top: 1em;
+    height: 6em;
+    width: 15rem;
+  }
+    
+  #menuToggle {
+    left: 2.5em;
+    top: 0.3em;
+  }
+      
+  #menu {
+    width: 12.8em;
+    margin: 0.9em 0 0 -2.6em;
+    padding: 0 1.8em 1em 3em;
+  }
+      
+  #menu li {
+    font-size: 1.45em;
+    margin: -0.1em 0 -0.60em 0;
+  }
+     
+  .jezikDE,
+  .jezikEN {
+    font-size: 1.2em;
+    right: 1.5em;
+  }
+     
+  .jezikDE {
+    top: 2.2em;
+  }
+       
+  .jezikEN {
+    top: 3.2em;
+  }
+     
+  .galerija {
+    background-image: url(https://epicdev.si/jagosi/images/pokrovcki.jpg);
+    height: calc(100vh - 8em);
+    background-size: cover;
+    background-position: 80% 50%;
+  }
+    
+  .galerijaBg {
+    top: 53%;
+    left: 0;
+    transform: translate(-50% -50%);
+    height: auto;
+  }
+    
+  .galerijaBesedilo {
+    font-size: 1.4em;
+    width: 17em;
+    padding: 1em;
+  }
+    
   .zeleniTrak {
     font-size: 1.2em;
   }
-  }
-  
-  @media(min-width: 1280px) and (orientation: landscape) {
-    header {
-      height: 8em;
-     }
-    .logo {
-      top: 1em;
-      height: 6em;
-      width: 15rem;
-     }
-    
-    #menuToggle {
-      left: 2.5em;
-      top: 0.3em;
-      }
-      
-    #menu {
-      width: 12.8em;
-      margin: 0.9em 0 0 -2.6em;
-      padding: 0 1.8em 1em 3em;
-      }
-      
-    #menu li {
-      font-size: 1.45em;
-      margin: -0.1em 0 -0.60em 0;
-      }
-     
-    .jezikDE,
-    .jezikEN {
-      font-size: 1.2em;
-      right: 1.5em;
-     }
-     
-    .jezikDE {
-      top: 2.2em;
-     }
-       
-    .jezikEN {
-      top: 3.2em;
-     }
-     
-     .galerija {
-      background-image: url(https://epicdev.si/jagosi/images/pokrovcki.jpg);
-      height: calc(100vh - 8em);
-      background-size: cover;
-      background-position: 80% 50%;
-    }
-    
-    .galerijaBg {
-      top: 53%;
-      left: 0;
-      transform: translate(-50% -50%);
-      height: auto;
-    }
-    
-    .galerijaBesedilo {
-      font-size: 1.4em;
-      width: 17em;
-      padding: 1em;
-    }
-    
-    .zeleniTrak {
-      font-size: 1.2em;
-    }
-  }
+}
