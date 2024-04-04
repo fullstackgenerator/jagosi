@@ -518,6 +518,7 @@ a:hover {
   header {
     height: 8em;
     }
+
   .logo {
     top: 1em;
     height: 6em;
@@ -561,7 +562,7 @@ a:hover {
   }
 
   .storitveBg {
-    top: 50%;
+    top: 60%;
   }
 
   .storitveBesedilo {
@@ -581,6 +582,6 @@ a:hover {
 
   @media(min-width: 1400px) and (orientation: landscape) {
   .storitveBg {
-    top: 60%;
+    top: 59.5%;
     }
   }
