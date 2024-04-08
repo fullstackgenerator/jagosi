@@ -48,14 +48,13 @@ footer {
   background-color: #4e4e4e;
   font-family: "Manrope", sans-serif;
   color: #f8f8f8;
-  height: 1.5em;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.8em;
   bottom: 0;
-  width: 100vw;
+  height: 1.5em;
 }
 
 footer a {
@@ -978,6 +977,11 @@ a:hover {
   }
 
   @media(min-width: 1920px) and (orientation: landscape) {
+  
+  footer {
+    font-size: 0.7em;
+  }
+
   .strojBg {
     top: 48%;
   }

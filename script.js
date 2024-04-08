@@ -19,18 +19,25 @@ function isInViewport(element) {
     );
   }
   
-  // Function to handle scroll event
-  function handleScroll() {
-    const elements = document.querySelectorAll('.landingBgRazvoj, .landingBgZnanje, .landingBgIzboljsave');
-    elements.forEach(element => {
-      if (isInViewport(element)) {
-        element.classList.add('visible');
-      }
-    });
-  }
-  
-  // Add scroll event listener
-  window.addEventListener('scroll', handleScroll);
+  document.addEventListener("DOMContentLoaded", function() {
+    const elementsToShow = document.querySelectorAll('.landingBgRazvoj, .landingBgZnanje, .landingBgIzboljsave');
+
+    function checkScroll() {
+        elementsToShow.forEach(element => {
+            if (isVisible(element)) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    function isVisible(element) {
+        const elementTop = element.getBoundingClientRect().top;
+        return elementTop <= window.innerHeight * 0.75;
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Check on page load
+});
 
   function handleParallax() {
     const razvoj = document.querySelector('.razvoj');
