@@ -1,0 +1,739 @@
+/* Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox */
+body {
+  scrollbar-color: #f1f1f1 #f1f1f1;
+}
+
+body::-moz-scrollbar-thumb {
+  background: #888;
+}
+
+body::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/*glava in noga*/
+
+header {
+  position: sticky;
+  top: 0;
+  height: 8em;
+  width: auto;
+  background: #f8f8f8; 
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: #4e4e4e;
+  font-family: "Manrope", sans-serif;
+  color: #f8f8f8;
+  height: 1.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f8f8f8 !important;
+  margin: 0.2em;
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  background-image: url(https://epicdev.si/jagosi/images/jagosiNew.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 6.3em;
+  width: 15rem;
+  left: 50%;
+  transform: translate(-50%);
+  top: 1rem;
+}
+
+/*meni*/
+
+ #menuToggle {
+  display: block;
+  position: relative;
+  left: 3.1em;
+  font-family: "Manrope", sans-serif;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  align-items: center;
+ }
+ 
+ #menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover {
+  color: #eb9705
+ }
+ 
+ #menuToggle input {
+  display: block;
+  width: 2.7em;
+  height: 1.8em;
+  position: absolute;
+  top: -0.15em;
+  left: -0.5em;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+ #menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #4e4e4e;
+  border-radius: 0.15em;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+ 
+ #menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+ 
+ #menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+ 
+ #menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+ 
+ #menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+ 
+ #menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+ 
+ #menu {
+  position: absolute;
+  width: 7em;
+  margin: -100px 0 0 -50px;
+  padding: 8em 3em 1em 3em;
+  background: #f8f8f8;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+ 
+ #menu li {
+  padding: 0.3em 0;
+  font-size: 1.4em;
+}
+
+ #menuToggle input:checked ~ ul {
+  transform: none;
+}
+ 
+a {
+  text-decoration: none !important;
+  color: #7bcd16 !important;
+  margin: 0 1rem 0 1em;
+}
+
+a:hover {
+  color: #eb9705 !important;
+}
+
+.jezikSI,
+.jezikEN {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3em;
+  position: absolute;
+  right: 2.5em;
+  color: #4e4e4e !important;
+}
+
+.jezikSI {
+  top: 2em;
+}
+
+.jezikEN {
+  top: 3em;
+}
+
+.kontakt {
+  background-image: url(https://epicdev.si/jagosi/images/kontakt.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  height: calc(100vh - 8em);
+  width: 100vw;
+  filter: contrast(1.2);
+  /*https://unsplash.com/photos/photo-of-bulb-artwork-82TpEld0_e4?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash*/
+}
+
+.kontaktBg {
+  position: absolute;
+  background: rgb(255,255,255);
+  background: linear-gradient(31deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 48%, rgba(210,210,210,0.7) 100%);
+  height: 1.3em;
+  width: 18em;
+  top: 51%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  left: 0;
+  border-radius: 0.15em;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, .2);
+}
+
+.kontaktBesedilo {
+  position: absolute;
+  font-family: "Manrope", sans-serif;
+  font-weight: 200;
+  font-size: 1.8em;
+  line-height: 1.3;
+  word-spacing: 2px;
+  padding: 1.5em 1.8em 1.5em 1.8em;
+}
+
+.zeleniTrak {
+  margin-top: 20px;
+  background-color: #7bcd16;
+  height: 1.2em;
+  width: 100vw;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.8em;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: grid;
+  background-color: #f8f8f8;
+  height: auto;
+  width: 100vw;
+  grid-template-columns: 35% 60%;
+  grid-template-rows: 10%;
+  gap: 2em;
+  justify-content: space-evenly; 
+  margin: 1em;
+}
+
+.podatki {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2em;
+  color: #000000;
+  line-height: 1.5;
+  word-spacing:-2px;
+  margin: 3em 0 0 8em;
+}
+
+.map {
+  height: 35em;
+  width: 50em;
+  margin: 3em 1em 3em 1em;
+  padding: 1em;
+  border: hidden;
+}
+
+  @media(min-width: 320px) and (orientation: portrait) {
+    header {
+      height: 6em;
+    }
+    
+    footer {
+      font-size: 0.5em;
+    }
+    
+    .logo {
+      height: 4.5em;
+      width: 10rem;
+    }
+    
+    #menuToggle {
+      left: 1.65em;
+      top: 0.2em;
+    }
+    
+    #menuToggle input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menuToggle span {
+      width: 1.9em;
+      height: 3px;
+      margin-bottom: 5px;
+    }
+    
+    #menu {
+      width: 11.3em;
+      margin: 2em 0 0 -2.8em;
+      padding: 0 1.8em 0 3em;
+    }
+    
+    #menu li {
+      font-size: 1.2em;
+      margin-top: -0.3em;
+      font-weight: 500;
+    }
+    
+    .jezikSI,
+    .jezikEN {
+      font-size: 1em;
+      right: 0.9em;
+    }
+    
+    .kontakt {
+      background-image: url(https://epicdev.si/jagosi/images/purple.jpg);
+      height: calc(100vh - 6em);
+      background-position: 45% 50%;
+      /*Photo by <a href="https://unsplash.com/@lukesouthern?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Luke Southern</a> on <a href="https://unsplash.com/photos/purple-rotary-telephone-k5o-cuu9E6g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+    }
+    
+    .kontaktBg {
+      height: auto;
+      top: 69%;
+    }
+    
+    .kontaktBesedilo {
+      position: absolute;
+      font-family: "Manrope", sans-serif;
+      font-weight: 200;
+      line-height: 1.3;
+      word-spacing: 2px;
+      padding: 1em 1em 1em 1em;
+      font-size: 1.3em;
+      width: 12em;
+      height: auto;
+    }
+    
+    .zeleniTrak {
+      margin-top: 20px;
+      background-color: #7bcd16;
+      height: 1.2em;
+      width: 100vw;
+      font-family: "Manrope", sans-serif;
+      font-size: 1.3em;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info {
+      background-color: #f8f8f8;
+      height: auto;
+      width: auto;
+      overflow-x: hidden;
+    }
+
+    .podatki {
+      position: relative;
+      font-family: "Manrope", sans-serif;
+      font-size: 1.1em;
+      color: #000000;
+      line-height: 1.5;
+      word-spacing:2px;
+      text-align: center;
+      width: 80vw;
+      margin: 2em 2em 2em 1.8em;
+    }
+    
+    .map {
+      position: relative;
+      height: 35em;
+      width: auto;
+      border: hidden;
+      margin: 22em 0 0 -8.5em;
+    }
+  }
+  
+  @media(min-width: 568px) and (orientation: landscape) {
+  header {
+    height: 5em;
+  }
+  
+  footer {
+    font-size: 0.7em;
+  }
+  
+  .logo {
+    top: 0.8em;
+    height: 4em;
+    width: 9rem;
+  }
+  
+   #menuToggle {
+    left: 1.65em;
+    top: 0.2em;
+  }
+  
+   #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+   
+   #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+   #menuToggle span {
+    width: 1.9em;
+    height: 3px;
+    margin-bottom: 5px;
+  }
+   
+   #menu {
+    width: 11.3em;
+    margin: 0 0 0 -2.8em;
+    padding: 0 1.8em 0 3em;
+  }
+   
+   #menu li {
+    font-size: 1.2em;
+    margin: -0.3em 0 -0.2em 0;
+    font-weight: 500;
+  }
+  
+  .jezikSI,
+  .jezikEN {
+    font-size: 1em;
+    right: 0.9em;
+  }
+  
+  .jezikSI {
+    top: 1.5em;
+  }
+    
+  .jezikEN {
+    top: 2.5em;
+  }
+  
+  .kontakt {
+    height: calc(100vh - 5em);
+  }
+  
+  .kontaktBg {
+    top: 61%;
+    height: auto;
+  }
+  
+  .kontaktBesedilo {
+    font-size: 1.1em;
+    width: 22em;
+    padding: 1em;
+  }
+  
+  .zeleniTrak {
+    margin-top: 20px;
+    background-color: #7bcd16;
+    height: 1.2em;
+    width: 100vw;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info {
+    background-color: #f8f8f8;
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .podatki {
+    font-size: 1em;
+    font-family: "Manrope", sans-serif;
+    color: #000000;
+    word-spacing:2px;
+    line-height: 1.5;
+    padding: 0 1em;
+    width: calc(100% - 3em);
+    margin: 2em 2em 2em 1.8em;
+    width: 100%;
+  }
+
+  .map {
+    height: 20em;
+    width: 85%;
+    border: hidden;
+    margin: 1em;
+  }
+}
+  
+  @media(min-width: 768px) and (orientation: portrait) {
+  header {
+    height: 6em;
+  }
+
+  .kontakt {
+    height: calc(100vh - 6em);
+  }
+
+  .kontaktBg {
+    top: 67%;
+}
+  
+  .kontaktBesedilo {
+    width: 22em;
+    height: auto;
+    font-size: 1.4em;
+  }
+
+  .zeleniTrak {
+    font-size: 1.3em;
+  }
+
+  .info {
+    background-color: #f8f8f8;
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .podatki {
+    width: calc(100% - 1em);
+    margin-top: 1.5em;
+  }
+
+  .map {
+    height: 20em;
+    width: 85%;
+    border: hidden;
+    margin: 1em;
+  }
+}
+
+  @media(min-width: 1024px) and (orientation: landscape) {
+  header {
+    height: 5em;
+  }
+  
+  footer {
+    font-size: 0.7em;
+  }
+  
+  .logo {
+    top: 0.8em;
+    height: 4em;
+    width: 9rem;
+  }
+  
+   #menuToggle {
+    left: 1.65em;
+    top: 0.2em;
+  }
+  
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+   
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menuToggle span {
+    width: 1.9em;
+    height: 3px;
+    margin-bottom: 5px;
+  }
+   
+  #menu {
+    width: 11.3em;
+    margin: 0 0 0 -2.8em;
+    padding: 0 1.8em 0 3em;
+  }
+   
+   #menu li {
+    font-size: 1.2em;
+    margin: -0.3em 0 -0.2em 0;
+    font-weight: 500;
+  }
+  
+  .jezikSI,
+  .jezikEN {
+    font-size: 1em;
+    right: 0.9em;
+  }
+  
+  .jezikSI {
+    top: 1.5em;
+  }
+    
+  .jezikEN {
+    top: 2.5em;
+  }
+  
+  .kontakt {
+    height: calc(100vh - 5em);
+  }
+  
+  .kontaktBg {
+    top: 50%;
+    height: auto;
+  }
+  
+  .kontaktBesedilo {
+    font-size: 1.4em;
+    width: 30em;
+    padding: 1em;
+  }
+  
+  .zeleniTrak {
+    font-size: 1.2em;
+  }
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+  .kontaktBesedilo {
+    font-size: 1.4em;
+    width: 30em;
+    padding: 1em;
+  }
+}
+  
+  @media(min-width: 1280px) and (orientation: landscape) {
+  header {
+    height: 8em;
+  }
+
+  .logo {
+    top: 1em;
+    height: 6em;
+    width: 15rem;
+  }
+    
+  #menuToggle {
+    left: 2.5em;
+    top: 0.3em;
+  }
+      
+  #menu {
+    width: 14.5em;
+    margin: 1em 0 0 -2.6em;
+    padding: 0 1.8em 1em 3em;
+  }
+      
+  #menu li {
+    font-size: 1.45em;
+    margin: 0 0 -0.5em 0;
+  }
+     
+  .jezikSI,
+  .jezikEN {
+    font-size: 1.2em;
+    right: 1.5em;
+  }
+     
+  .jezikSI {
+    top: 2.3em;
+  }
+       
+  .jezikEN {
+    top: 3.3em;
+  }
+
+  .kontaktBg {
+    top: 50%;
+  }
+
+  .kontaktBesedilo {
+    font-size: 1.4em;
+  }
+
+  .zeleniTrak {
+    font-size: 1.3em;
+  }
+
+  .podatki {
+    font-size: 1.2em;
+    padding: 0 1em;
+    margin: 10em 1em 1em 1em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .map {
+    height: 80vh;
+    width: 90%;
+    border: hidden;
+    margin: 0;
+  }
+}
+
+@media(min-width: 1400px) and (orientation: landscape) {
+  .podatki {
+    margin: 12em 1em 1em 1em;
+  }
+}
+
+@media(min-width: 1600px) and (orientation: landscape) {
+  .podatki {
+   margin: 11em 1em 1em 1em;
+  }
+}
+
+@media(min-width: 1920px) and (orientation: landscape) {
+  .podatki {
+    margin: 14em 1em 1em 1em;
+  }
+}

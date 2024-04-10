@@ -244,57 +244,6 @@ a:hover {
   margin: 2em 0 0 0;
 }
 
-.enovice {
-  background-image: url(https://epicdev.si/jagosi/images/lego2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  align-items: center;
-  top: 50%;
-  display: flex;
-  height: 50vh;
-  width: 100%;
-  filter: contrast(1.2) hue-rotate(40deg) saturate(100%);
-  /*https://unsplash.com/photos/blue-building-block-lot-TL5Vy1IM-uA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash*/
-}
-
-.enoviceBg {
-  background-color: #f8f8f8c1;
-  backdrop-filter: blur(0.2em);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  border-radius: 0.15em;
-  text-align: center;
-  height: auto;
-  width: 100vw;
-}
-
-.enoviceBesedilo,
-input[type="email"],
-.poslji {
-  color: #000000;
-  font-family: "Manrope", sans-serif;
-}
-
-.enoviceBesedilo {
-  justify-content: center;
-  margin: 3rem;
-}
-
-.poslji {
-  background-color: rgba(240, 240, 240, 0.5);
-  border: 0.1em solid #4e4e4e;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.15em;
-}
-
-input[type="email"] {
-  margin: 0 1em 3em 0;
-  width: 15em;
-  border-radius: 0.15em;
-}
-
 .razvoj,
 .znanje,
 .izboljsave {
@@ -454,39 +403,7 @@ input[type="email"] {
   .preveriPonudbo {
     font-size: 0.65em;
   }
-
-  .enovice {
-    height: auto;
-  }
-
-  .enoviceBg {
-    background-color: #f8f8f8c1;
-    backdrop-filter: blur(0.2em);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    border-radius: 0.15em;
-    text-align: center;
-    height: auto;
-    width: 100%;
-  }
-
-  .enoviceBesedilo,
-  input[type="email"],
-  .poslji {
-    font-size: 0.8em;
-  }
-
-  .enoviceBesedilo {
-    margin: 3em;
-  }
-
-  .poslji {
-    margin: 0 2em 2em 2em;
-  }
-
-  input[type="email"] {
-    margin: 0 1em 2em 0;
-  }
-
+  
   .razvoj,
   .znanje,
   .izboljsave {
@@ -560,10 +477,6 @@ input[type="email"] {
   @media(min-width: 360px) and (orientation: portrait) {
   .landing {
     background-position: 50% 50%;
-  }
-  
-  input[type="email"] {
-    margin: 0 1em 2em 2em;
   }
 
   .landingBesediloRazvoj,
@@ -691,38 +604,6 @@ input[type="email"] {
 
   .preveriPonudbo {
     font-size: 0.65em;
-  }
-
-  .enovice {
-    height: auto;
-  }
-
-  .enoviceBg {
-    background-color: #f8f8f8c1;
-    backdrop-filter: blur(0.2em);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    border-radius: 0.15em;
-    text-align: center;
-    height: auto;
-    width: 100%;
-  }
-
-  .enoviceBesedilo,
-  input[type="email"],
-  .poslji {
-    font-size: 0.8em;
-  }
-
-  .enoviceBesedilo {
-    margin: 3em;
-  }
-
-  .poslji {
-    margin: 0 2em 2em 2em;
-  }
-
-  input[type="email"] {
-    margin: 0 1em 2em 0;
   }
 
   .razvoj,
@@ -935,12 +816,6 @@ input[type="email"] {
     width: 21em;
   }
 
-  .enoviceBesedilo,
-  input[type="email"],
-  .poslji {
-    font-size: 0.9em;
-  }
-
   .razvoj,
   .znanje,
   .izboljsave {
@@ -998,12 +873,6 @@ input[type="email"] {
   .landingBesedilo {
     font-size: 1.4em;
     width: 21em;
-  }
-
-  .enoviceBesedilo,
-  input[type="email"],
-  .poslji {
-    font-size: 0.9em;
   }
 
   .razvoj,
@@ -1147,38 +1016,6 @@ input[type="email"] {
     font-size: 0.65em;
   }
 
-  .enovice {
-    height: auto;
-  }
-
-  .enoviceBg {
-    background-color: #f8f8f8c1;
-    backdrop-filter: blur(0.2em);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    border-radius: 0.15em;
-    text-align: center;
-    height: auto;
-    width: 100%;
-  }
-
-  .enoviceBesedilo,
-  input[type="email"],
-  .poslji {
-    font-size: 0.8em;
-  }
-
-  .enoviceBesedilo {
-    margin: 3em;
-  }
-
-  .poslji {
-    margin: 0 2em 2em 2em;
-  }
-
-  input[type="email"] {
-    margin: 0 1em 2em 0;
-  }
-
   .razvoj,
   .znanje,
   .izboljsave {
@@ -1245,12 +1082,6 @@ input[type="email"] {
   @media(min-width: 1366px) and (orientation: landscape) {
   .landingBg {
     top: 25%;
-  }
-
-  .enoviceBesedilo,
-  input[type="email"],
-  .poslji {
-    font-size: 1em;
   }
 
   .naslov {
@@ -1381,12 +1212,6 @@ input[type="email"] {
 
   .preveriPonudbo {
     font-size: 0.6em;
-  }
-
-  .enoviceBesedilo,
-  input[type="email"],
-  .poslji {
-    font-size: 1.1em;
   }
 
   .razvoj,
