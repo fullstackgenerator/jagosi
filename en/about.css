@@ -454,7 +454,7 @@ a:hover {
   }
 
   footer {
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
 
   .logo {
@@ -687,7 +687,7 @@ a:hover {
   }
 
   .stroj {
-    height: calc(100vh - 6em);
+    height: calc(100vh - 5em);
   }
     
   .strojBg {
@@ -951,11 +951,6 @@ a:hover {
   }
 
   @media(min-width: 1920px) and (orientation: landscape) {
-  
-  footer {
-    font-size: 0.7em;
-  }
-
   .strojBg {
     top: 48%;
   }

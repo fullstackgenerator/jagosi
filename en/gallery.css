@@ -290,7 +290,7 @@ a:hover {
    }
    
    #menu {
-    width: 10.5em;
+    width: 10.3em;
     margin: 2em 0 0 -2.8em;
     padding: 0 1em 0 3em;
    }
@@ -367,7 +367,7 @@ a:hover {
   }
   
   footer {
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   
   .logo {
@@ -398,9 +398,9 @@ a:hover {
   }
    
   #menu {
-    width: 10.5em;
+    width: 10.3em;
     margin: -0.6em 0 0 -2.8em;
-    padding: 0.5em 1.8em 1em 3em;
+    padding: 0.5em 1.8em 0 3em;
   }
    
   #menu li {
@@ -477,6 +477,15 @@ a:hover {
 }
   
   @media(min-width: 1024px) and (orientation: landscape) {
+  #menu {
+    width: 10.3em;
+    padding: 0.5em 1.8em 0 3em;
+  }
+  
+  footer {
+    font-size: 0.7em;
+  }
+
   .galerija {
     background-image: url(https://epicdev.si/jagosi/images/pokrovcki.jpg);
     height: calc(100vh - 5em);
@@ -515,7 +524,7 @@ a:hover {
   }
       
   #menu {
-    width: 12.5em;
+    width: 12.3em;
     margin: 0.9em 0 0 -2.6em;
     padding: 0 1.8em 1em 3em;
   }

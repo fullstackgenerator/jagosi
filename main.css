@@ -57,6 +57,7 @@ footer {
   justify-content: center;
   font-size: 0.8em;
   bottom: 0;
+  height: 1.5em;
 }
 
 footer a {
@@ -803,6 +804,10 @@ a:hover {
     height: 6em;
   }
 
+  footer {
+    font-size: 0.7em;
+  }
+
   .landing {
     height: calc(100vh - 6em);
   }
@@ -852,6 +857,10 @@ a:hover {
   @media(min-width: 1024px) and (orientation: landscape) {
   header {
     height: 6em;
+  }
+
+  footer {
+    font-size: 0.7em;
   }
 
   .jezikDE {
@@ -957,6 +966,10 @@ a:hover {
   @media(min-width: 1280px) and (orientation: landscape) {
   header {
     height: 8em;
+  }
+
+  footer {
+    font-size: 0.7em;
   }
 
   .logo {
@@ -1156,10 +1169,10 @@ a:hover {
 
   @media(min-width: 1600px) and (orientation: landscape) { 
   footer {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
  
-    .landingBg {
+  .landingBg {
     top: 38%;
   }
 
@@ -1191,7 +1204,7 @@ a:hover {
   }
 
   footer {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .jezikDE {

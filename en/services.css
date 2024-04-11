@@ -377,7 +377,7 @@ a:hover {
   }
   
   footer {
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   
   .logo {
@@ -492,6 +492,10 @@ a:hover {
   }
   
   @media(min-width: 1024px) and (orientation: landscape) {
+  footer {
+    font-size: 0.7em;
+  }
+ 
   .storitve {
     background-image: url(https://epicdev.si/jagosi/images/95T.png);
     height: calc(100vh - 5em);

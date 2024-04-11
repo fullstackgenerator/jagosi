@@ -57,6 +57,7 @@ footer {
   justify-content: center;
   font-size: 0.8em;
   bottom: 0;
+  height: 1.5em;
 }
 
 footer a {
@@ -532,7 +533,7 @@ a:hover {
   }
 
   footer {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
 
   .logo {
@@ -563,14 +564,15 @@ a:hover {
   }
 
   #menu {
-    width: 5.3em;
-    margin: -120px 0 0 -50px;
-    padding: 8em 1em 0 3em;
+    width: 5.5em;
+    margin: 0 0 0 -2.8em;
+    padding: 0 1.8em 0 3em;
   }
 
   #menu li {
-    font-size: 1em;
-    margin-top: -0.3em;
+    font-size: 1.2em;
+    margin: -0.3em 0 -0.2em 0;
+    font-weight: 500;
   }
 
   .jezikSI,
@@ -803,6 +805,11 @@ a:hover {
     height: 6em;
   }
 
+  #menuToggle {
+    left: 1.65em;
+    top: -0.85em;
+  }
+
   .landing {
     height: calc(100vh - 6em);
   }
@@ -851,7 +858,24 @@ a:hover {
 
   @media(min-width: 1024px) and (orientation: landscape) {
   header {
-    height: 6em;
+    height: 5em;
+  }
+
+  #menuToggle {
+    left: 1.65em;
+    top: -0.85em;
+  }
+
+  #menu {
+    width: 5.5em;
+    margin: 0 0 0 -2.8em;
+    padding: 0 1.8em 0 3em;
+  }
+
+  #menu li {
+    font-size: 1.2em;
+    margin: -0.3em 0 -0.2em 0;
+    font-weight: 500;
   }
 
   .jezikSI {
@@ -863,7 +887,7 @@ a:hover {
   }
 
   .landing {
-    height: calc(100vh - 6em);
+    height: calc(100vh - 5em);
   }
 
   .landingBg {
@@ -965,9 +989,13 @@ a:hover {
     width: 15rem;
   }
 
+  footer {
+    font-size: 0.7em;
+  }
+  
   #menuToggle {
     left: 2.5em;
-    top: -0.65em;
+    top: -0.70em;
   }
     
   #menu {
@@ -1155,10 +1183,6 @@ a:hover {
   }
 
   @media(min-width: 1600px) and (orientation: landscape) { 
-  footer {
-    font-size: 0.8em;
-  }
- 
   .landingBg {
     top: 38%;
   }
@@ -1188,10 +1212,6 @@ a:hover {
     top: 1em;
     height: 6em;
     width: 15rem;
-  }
-
-  footer {
-    font-size: 0.8em;
   }
 
   .jezikSI {

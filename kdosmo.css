@@ -586,6 +586,10 @@ a:hover {
   }
 
   @media(min-width: 768px) and (orientation: portrait) {
+  footer {
+    font-size: 0.7em;
+  }
+  
   .strojBg {
     top: 69.5%;
   }

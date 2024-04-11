@@ -61,6 +61,7 @@ footer {
   bottom: 0;
   width: 100%;
   z-index: 1;
+  height: 1.5em;
 }
 
 footer a {
@@ -481,6 +482,10 @@ a:hover {
   }
   
   @media(min-width: 768px) and (orientation: portrait) {
+  footer {
+    font-size: 0.7em;
+  }
+  
   .storitveBg {
     top: 69.5%;
   }
@@ -492,6 +497,10 @@ a:hover {
   }
   
   @media(min-width: 1024px) and (orientation: landscape) {
+  footer {
+    font-size: 0.7em;
+  }
+  
   .storitve {
     background-image: url(https://epicdev.si/jagosi/images/95T.png);
     height: calc(100vh - 5em);
@@ -517,7 +526,7 @@ a:hover {
   @media(min-width: 1280px) and (orientation: landscape) {
   header {
     height: 8em;
-    }
+  }
 
   .logo {
     top: 1em;

@@ -61,6 +61,7 @@ footer {
   bottom: 0;
   width: 100%;
   z-index: 1;
+  height: 1.5em;
 }
 
 footer a {
@@ -466,6 +467,10 @@ a:hover {
 }
 
 @media(min-width: 768px) and (orientation: portrait) {
+  footer {
+    font-size: 0.7em;
+  }
+ 
   .galerijaBg {
     width: 17em;
     top: 67%;
@@ -477,7 +482,11 @@ a:hover {
 }
   
   @media(min-width: 1024px) and (orientation: landscape) {
-  .galerija {
+  footer {
+    font-size: 0.7em;
+  }
+  
+    .galerija {
     background-image: url(https://epicdev.si/jagosi/images/pokrovcki.jpg);
     height: calc(100vh - 5em);
     background-size: cover;

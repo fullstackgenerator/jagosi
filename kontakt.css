@@ -59,6 +59,7 @@ footer {
   justify-content: center;
   font-size: 0.8em;
   bottom: 0;
+  height: 1.5em;
 }
 
 footer a {
@@ -523,6 +524,10 @@ a:hover {
     height: 6em;
   }
 
+  footer {
+    font-size: 0.7em;
+  }
+
   .kontakt {
     height: calc(100vh - 6em);
   }
@@ -709,5 +714,23 @@ a:hover {
     width: 90%;
     border: hidden;
     margin: 0;
+  }
+}
+
+@media(min-width: 1400px) and (orientation: landscape) {
+  .podatki {
+    margin: 12em 1em 1em 1em;
+  }
+}
+
+@media(min-width: 1600px) and (orientation: landscape) {
+  .podatki {
+   margin: 11em 1em 1em 1em;
+  }
+}
+
+@media(min-width: 1920px) and (orientation: landscape) {
+  .podatki {
+    margin: 14em 1em 1em 1em;
   }
 }
